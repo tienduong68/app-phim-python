@@ -2,6 +2,26 @@
 
 Ứng dụng xem phim desktop viết bằng **Python + Flet**, sử dụng API từ [phimapi.com](https://phimapi.com).
 
+## 📥 Tải về & Sử dụng ngay (Windows)
+
+> Không cần cài Python hay bất kỳ thứ gì — tải về và chạy luôn!
+
+➡️ **[Tải PhimOngTien.exe tại đây (GitHub Releases)](https://github.com/tienduong68/app-phim-python/releases/latest)**
+
+### ⚠️ Windows báo "isn't commonly downloaded"?
+
+Đây là cảnh báo bình thường với phần mềm chưa được ký số. Để chạy app:
+
+**Cách 1 — Qua trình duyệt khi tải:**
+1. Click **"..."** (ba chấm) cạnh file vừa tải
+2. Chọn **Keep** → **Show more** → **Keep anyway**
+
+**Cách 2 — Qua Windows Explorer:**
+1. Chuột phải vào file `.exe` → **Properties**
+2. Ở dưới cùng, check vào ô **Unblock**
+3. Click **OK** rồi mở file bình thường
+
+
 ## ✨ Tính năng
 
 - 🆕 Xem phim mới cập nhật theo thời gian thực
@@ -32,8 +52,8 @@ python app_phim.py
 ## 📦 Build thành file .exe (Windows)
 
 ```bash
-pip install pyinstaller
-pyinstaller app_phim.spec
+pip install flet
+flet pack app_phim.py --name "PhimOngTien"
 ```
 
 File `.exe` sẽ nằm trong thư mục `dist/`.
